@@ -7,6 +7,7 @@ const Api = new API("https://jsonplaceholder.typicode.com/");
 
 await Api.store("todos");
 await Api.store("posts");
+await Api.store("comments");
 
 console.log(Api);
 
