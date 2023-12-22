@@ -1,0 +1,8 @@
+@import "utils/variable";
+@import "utils/mixins";
+
+body {
+    background: $primary;
+}
+
+@import "components/card";

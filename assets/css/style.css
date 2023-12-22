@@ -1,0 +1,29 @@
+body {
+  background: red;
+}
+
+.card {
+  border-radius: 10px;
+  max-width: 300px;
+  overflow: hidden;
+  height: 100%;
+  min-width: 188px;
+  background: #990000;
+}
+.card img {
+  /* aspect-ratio: 9/16; */
+  min-height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .badge-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

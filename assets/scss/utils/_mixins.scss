@@ -1,0 +1,34 @@
+@mixin flexAlignCenter() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin buttonStyle($background: "true", $delayTransition: 0.3s) {
+    @if $background == "true" {
+        background: $primary;
+    } @else {
+        background: transparent;
+    }
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all $delayTransition ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $background;
+        transition: width $delayTransition ease-in-out;
+    }
+}
